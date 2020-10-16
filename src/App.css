@@ -1,38 +1,151 @@
 .App {
-  text-align: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__content {
+	display: flex;
+	/* justify-content: space-between; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calendar__container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: auto;
+	margin-left: 50px;
+	width: 455px;
+	height: 544px;
+	left: 66px;
+	top: 138px;
+
+	background: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+}
+
+.calendar__container h4 {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.time__select {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.time-picker {
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+	width: 91px;
+	height: 27px;
+	left: 132px;
+	top: 611px;
+	border: none;
+	background: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+.bg_graphic {
+	z-index: -1;
+	width: 348px;
+	height: 247px;
+	object-fit: contain;
+	margin-top: 20px;
+
+	position: absolute;
+	left: 71.04%;
+	right: 4.71%;
+	top: 25.65%;
+	bottom: 42.22%;
+}
+
+.sharing__links {
+	/* margin-top: 345px;
+	margin-left: 120px; */
+	position: absolute;
+	left: 1015px;
+	top: 400px;
+}
+
+.sharing__main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 64px;.lower_section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 }
 
-.App-link {
-  color: #61dafb;
+.sharing__button {
+  width: 300px;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 15px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-transform: uppercase;
+
+  color: #656bdf;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sharing__main__inside {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lower__section {
+  display: flex;
+  flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	left: 774px;
+	top: 682px;
+	
+}
+
+.button__meeting {
+	/* margin: 40px 0; */
+  text-decoration: none;
+  padding: 18px 150px;
+
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+  background: linear-gradient(90deg, #6369de 0%, #8c92f9 100%);
+  color: #ffffff;
+  border-radius: 20px 20px 0px 20px;
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
