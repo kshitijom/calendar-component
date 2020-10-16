@@ -81,11 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 64px;.lower_section {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+  margin-top: 64px;
 }
 
 .sharing__button {
@@ -130,7 +126,6 @@ body {
 	position: absolute;
 	left: 774px;
 	top: 682px;
-	
 }
 
 .button__meeting {
